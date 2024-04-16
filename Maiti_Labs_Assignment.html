@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Rectangle Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #133009;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #133009;
+            /* border: 1px solid black; */
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            font-family: poppins;
+            text-decoration: none;
+        }
+
+        .button1 {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #133009;
+            /* border: none; */
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            margin-top: 25px;
+            /* transition: background-color 0.3s; */
+
+        }
+
+        .button1:hover {
+            background-color: #133009;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-color: #ffffff;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .cell1 {
+            width: 45%;
+            border: none;
+            /* border-width: 0px;
+            border-color: #ffffff; */
+            padding-left: 40px;
+            /* margin-left: 60px; */
+        }
+
+        .cell2 {
+            width: 55%;
+            width: 45%;
+            border: none;
+            /* border-width: 0px;
+            border-color: #ffffff; */
+            margin-right: 20px;
+            padding-right: 40px;
+            /* margin-left: 60px; */
+        }
+
+        .button2 {
+            padding: 10px 20px;
+            background-color:#133009;
+            color: white;
+            width: 150px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 135px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: 5px;
+            border-color: #133009;
+        }
+
+        .block {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #133009;
+            border-width: 5px;
+            border-color: #133009;
+        }
+
+        .block img {
+            width: 100%;
+            height: 50%;
+            color: #133009;
+            text-decoration: none;
+        }
+
+        .block .description {
+            margin-top: 10px;
+            text-decoration: none;
+            color: #133009;
+            text-decoration: none;
+            width: 88%;
+        }
+
+        .block .description a {
+            text-decoration: none;
+            color: #133009;
+            text-decoration: none;
+        }
+
+        .rectangle {
+            width: 50%;
+            height: 100%;
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-color: #133009;
+            border-width: 2px;
+            /* transition: background-color 0.3s; */
+            position: relative;
+            margin-left: 390px;
+            size: 24px;
+            text-align: left;
+        }
+
+        /* .rectangle::before,
+        .rectangle::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            bottom: -10px;
+            left: -10px;
+            right: -10px;
+            z-index: -1;
+            background: linear-gradient(to bottom right, #000000, #ffffff);
+        }
+
+        .rectangle::after {
+            background: linear-gradient(to top left, #000000, #ffffff);
+        } */
+
+        .dropdown {
+            display: none;
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .rectangle:hover {
+            background-color: #e0e0e0;
+            border-color: #133009;
+            border-width: 2px;
+        }
+
+        .last {
+            background-color: #133009;
+            margin-top: 60px;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .cella {
+            width: 60%;
+            color: #ffffff;
+            border: none;
+        }
+
+        .cellb,
+        .cellc {
+            width: 20%;
+            color: #ffffff;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            list-style-type: none;
+            border: none;
+        }
+
+        .extra {
+            font-weight: 800;
+            color: #133009;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="your_logo.png" alt="Logo">DeCarbonn
+        </div>
+        <div class="buttons">
+            <a href="#" class="button">Home</a>
+            <a href="#" class="button">Project</a>
+            <a href="#" class="button">About</a>
+            <a href="#" class="button">Connect -> </a>
+        </div>
+
+    </div>
+
+
+    <div>
+        <div>
+            <p style="font-family: gilroy-bold; font-size: 70px; text-align: center;">DeCarbonn your business by <br>
+                investing in carbon offest projects.</p>
+            <p style="color: #333333; font-size: 28px; text-align: center;">We search in India for climate projects with
+                highest impact.</p>
+        </div>
+        <div>
+            <button class="button1" style="margin-left: 595px;">CONNECT </button>
+            <button class="button1" style="margin-left: 40px;">GET IN TOUCH</button>
+        </div>
+    </div>
+    <div>
+        <img src="abc.jpeg" style="width: 1309px;
+    height: 450px; border:black; margin-right: 110px;margin-left: 100px;
+    margin-top: 100px;">
+    </div>
+    <div>
+        <p style="text-align: center; size: 44px; color: #133009;
+        font-weight: 700;
+        margin-top: 108px;
+        margin-bottom: 70px;">Our goal is to simply & enhance climate action.</p>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td class="cell1">
+                    <p class="extra">Calculate your carbonn <br> footprints </p>
+                    <p>Use our open source calculate to find <br> out how much CO2 your business <br> emits.</p>
+                    <button class="button2">Calculator</button>
+                </td>
+                <td class="cell2">
+                    <img src="your_image.jpg" alt="Image">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr style="margin-top: 50px;">
+                <td style="width: 55%;
+                padding-left: 40px;
+                border: none;">
+                    <img src="your_image.jpg" alt="Image">
+                </td>
+                <td style="width: 45%;
+                padding-right: 40px;
+                border: none;
+                /* border-width: 0px;
+                border-color: #ffffff;*/">
+                    <p class="extra">Connect with a Projects <br> and Invest.</p>
+                    <p>Choose a project and we'll connect you <br> with the on-ground team before you <br> invest.</p>
+                    <button class="button2">Projects</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td class="cell1">
+                    <p class="extra">Earn Credits and track ypur investment </p>
+                    <p>Receive your carbon creditsin your <br> wallet and track your investment <br> impact every month. </p>
+                    <!-- <button class="button2">Calculator</button> -->
+                </td>
+                <td class="cell2">
+                    <img src="your_image.jpg" alt="Image">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div>
+            <p style="size: 42px;
+            margin-top: 90px;
+            margin-left: 60px;">All DeCarbonn projects meet these rigorous criteria:</p>
+        </div>
+        <div class="container">
+            <div class="block">
+                <a href="page1.html">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div class="description">Precise Tracking</div>
+                    <p style="color: #133009; text-decoration: none;">We carefully check how much CO2 is offset by each project, so we can promise you lasting impact
+                    </p>
+                </a>
+            </div>
+            <div class="block">
+                <a href="page2.html">
+                    <img src="image2.jpg" alt="Image 2">
+                    <div class="description">Every doller makes a difference</div>
+                    <p style="color: #133009; text-decoration: none;">Our projects wouldn't happen without your suppoer. With DeCarbonn your money makes a real impact.
+                    </p>
+                </a>
+            </div>
+            <div class="block">
+                <a href="page3.html">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div class="description">Internationally Recognised Credits Issuer</div>
+                    <p style="color: #133009; text-decoration: none;">We make sure all our projects are vetted by Internationally recognised issuers like Verra, Gold
+                        Standards, CSI etc</p>
+                </a>
+            </div>
+            <div class="block">
+                <a href="page4.html">
+                    <img src="image4.jpg" alt="Image 4">
+                    <div class="description" style="color: #133009; text-decoration: none;">Regular Updates </div>
+                    <p style="color: #133009; text-decoration: none;">We get data straight from projects on the ground, so you can track impact, month by monath.</p>
+                </a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div>
+        <p style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        size: 67px;
+        margin-top: 50px;">Frequently asked questions</p>
+        <div class="rectangle" onclick="toggleDropdown(1)" style="margin-top: 40px;">How do I invest in a Project?
+            <!-- <div id="dropdown1" class="dropdown">
+                Dropdown content for Rectangle 1
+            </div> -->
+        </div>
+
+        <div class="rectangle" onclick="toggleDropdown(2)" style="margin-top: 25px;">Can I get more details of the
+            project that are already in the
+            site?
+            <!-- <div id="dropdown2" class="dropdown">
+                Dropdown content for Rectangle 2
+            </div> -->
+        </div>
+
+        <div class="rectangle" onclick="toggleDropdown(3)" style="margin-top: 25px;">When will i recieve my Carbon
+            Credits in my account?
+            <!-- <div id="dropdown3" class="dropdown">
+                Dropdown content for Rectangle 3
+            </div> -->
+        </div>
+        <script>
+            function toggleDropdown(num) {
+                var dropdown = document.getElementById("dropdown" + num);
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            }
+        </script>
+    </div>
+    <div class="last">
+        <div>
+            <table>
+                <tr>
+                    <td class="cella" style="padding-left: 50px;
+                    padding-top: 40px;
+                    padding-bottom: 55px;">
+                        <div>
+                            <img src="logo.jpeg" alt="logo">DeCarbonn
+                        </div>
+                        <div style="margin-top: 30px;">
+                            <label for="email">Have a query?</label>
+                            <a href="mailto:example@example.com"><input type="email" placeholder="example@example.com"
+                                    style="margin-left: 20px; 
+                                    /* border-width: 3px; */
+                                    border-color: #133009;
+                                    border-radius:2px;
+                                    width: 200px;"></a>
+                            <button onclick="sendEmail()" style="margin-left: 20px; width: 120px;">Send</button>
+                        </div>
+                    </td>
+                    <td class="cellb" style="padding-left: 140px;">
+                        SOCIAL
+                        <ul style="list-style-type: none;
+                            padding: 0px;
+                            margin: 0px;
+                            color: #ffffff;">
+                            <li style="margin-top: 15px;"><a href="linkedin.html" style="color: #ffffff; text-decoration: none;">LinkedIn</a></li>
+                            <li style="margin-top: 10px;"><a href="insta.html" style="color: #ffffff; text-decoration: none;">Instgram</a></li>
+                            <li style="margin-top: 10px;"><a href="twitter.html" style="color: #ffffff; text-decoration: none;">Twitter</a></li>
+                        </ul>
+                    </td>
+                    <td class="cellc">
+                        COMPANY
+                        <ul style="list-style-type: none;
+                                        padding: 0px;
+                                        margin: 0px;
+                                        color: #ffffff;">
+                            <li style="margin-top: 15px;"><a href="home.html" style="color: #ffffff; text-decoration: none;">Home</a></li>
+                            <li style="margin-top: 10px;"><a href="Project.html" style="color: #ffffff; text-decoration: none;">Project</a></li>
+                            <li style="margin-top: 10px;"><a href="about.html" style="color: #ffffff; text-decoration: none;">About</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <div><span style="color: #ffffff; size: 25px;
+            padding-left: 10px;
+            text-align: left;">copywrite c 2024 DeCarbonn</span>
+                <span style="color: #f0f0f0;
+                text-align: center; size: 36px; margin-left: 450px;">Made with LOVE at MaitiLabs</span>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
